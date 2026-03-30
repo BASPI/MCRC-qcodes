@@ -1,11 +1,10 @@
 # Multichannel Remote Controller QCoDeS Driver
 
-QCoDeS driver for the Basel Precision Instruments Multichannel Remote Controller (MCRC),
-enabling remote operation of up to 8 BASPI amplifiers
-(4× SP983 I/V Converters and 4× SP1004 Differential Amplifiers) over TCP.
-
-Features include per-channel gain and cutoff control, real-time overload and
-compensation monitoring, automatic reconnection, and dynamic channel management.
+QCoDeS driver for the Basel Precision Instruments Multichannel Remote Controller (MCRC).
+The MCRC provides centralised remote control of gain and low-pass filter cutoff frequency
+for up to 4× SP983c I/V Converters and 4× SP1004 Differential Amplifiers in parallel,
+along with real-time device status monitoring. This driver enables full programmatic
+control over TCP, complementing the built-in web interface.
 
 ## Setup
 
