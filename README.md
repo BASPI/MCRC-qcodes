@@ -18,7 +18,7 @@ Download `Baspi_Mcrc.py` and `Baspi_Mcrc_Controller.py` and copy them to your pr
 - Network connection to the MCRC (default IP: `192.168.178.50`)
 
 ### Standalone CLI
-A pre-built Windows executable (.exe) for controlling the Multichannel Remote Controller is available under [[Releases](https://github.com/BASPI/MCRC-qcodes/releases)]
+A pre-built Windows executable (.exe) for controlling the Multichannel Remote Controller is available under [[Releases](https://github.com/BASPI/MCRC-qcodes/releases)].
 
 ## Further Documentation
 
