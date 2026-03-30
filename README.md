@@ -1,31 +1,24 @@
 # Multichannel Remote Controller QCoDeS Driver
 
-This repository contains the QCoDeS driver for the Basel Precision Instruments Multichannel Remote Controller (MCRC). The MCRC enables full remote operation of up to 8 BASPI amplifiers (4× SP983 I/V Converters and 4× SP1004 Differential Amplifiers). Additionally there are some examples on how to use the driver.
+QCoDeS driver for the Basel Precision Instruments Multichannel Remote Controller (MCRC),
+enabling remote operation of up to 8 BASPI amplifiers
+(4× SP983 I/V Converters and 4× SP1004 Differential Amplifiers) over TCP.
 
-## First Version
-
-The first version of this driver is v0.1.0. *We generally recommend to use the latest version of the driver to bring out the most of the Multichannel Remote Controller.*
-
-**What's new?**
-
-- This new version adds additional functions for the QCoDeS driver:
-    - Reconnect Function, after the connection has been lost, you are now able to reconnect to the MCRC without losing your channel configuration
-    - Improved channel management with add/remove functionality
-- The most important functions of the Multichannel Remote Controller are:
-    - Gain and Cutoff Frequency control for each channel
-    - Real-time Overload monitoring (for I/V Converters and Differential Amplifiers)
-    - Real-time Compensation status monitoring (for Differential Amplifiers)
-    - Support for custom channel names displayed on the web interface
+Features include per-channel gain and cutoff control, real-time overload and
+compensation monitoring, automatic reconnection, and dynamic channel management.
 
 ## Setup
 
-Download `Baspi_Mcrc.py` and `Baspi_Mcrc_Controller.py` and copy it to your project folder. `examples.ipynb` gives some examples on how the driver can be used.
+Download `Baspi_Mcrc.py` and `Baspi_Mcrc_Controller.py` and copy them to your project folder. `examples.ipynb` gives some examples on how the driver can be used.
 
 ### Requirements
 
 - Python 3.12 or higher
 - QCoDeS (`pip install qcodes`)
 - Network connection to the MCRC (default IP: `192.168.178.50`)
+
+### Standalone CLI
+A pre-built Windows executable (.exe) for controlling the Multichannel Remote Controller is available under [Releases](insert Link)
 
 ## Further Documentation
 
@@ -34,9 +27,6 @@ See https://www.baspi.ch/manuals for more information on the Multichannel Remote
 See https://microsoft.github.io/Qcodes/ for more information about the QCoDeS framework.
 
 If you have purchased a Multichannel Remote Controller, you have received documentation which includes the full command reference. Please be aware that the official documentation does not include any specific information on how to use the controller with the QCoDeS framework. However, since the QCoDeS driver allows for full control of the device and is mainly an interface, the general documentation is still useful.
-
-### Standalone CLI
-A standalone Windows executeable (.exe) for controlling the Multichannel Remote Controller is available under [Releases](insert Link)
 
 ## Contributing
 
